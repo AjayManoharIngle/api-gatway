@@ -13,4 +13,5 @@ import lombok.Setter;
 public class GlobalProperties {
 
 	private Map<String,ApiClientDto> apiClients;
+	private Map<String,String> routesContextPath;
 }

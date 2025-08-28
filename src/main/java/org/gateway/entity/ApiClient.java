@@ -31,9 +31,6 @@ public class ApiClient {
 	
 	@Column(name = "S_API_KEY")
 	private String apiKey;
-	
-	@Column(name = "S_SERVICE_CONTEXT_PATH")
-	private String serviceContextPath;
 	  
 	@Column(name = "N_STATUS")
 	private boolean active;
@@ -46,5 +43,8 @@ public class ApiClient {
 
     @Column(name = "S_CREATED_BY")
     private String createdBy;
+    
+    @Column(name="N_ENABLE_API_KEY")
+    private boolean activeAPIKey;
 }
 

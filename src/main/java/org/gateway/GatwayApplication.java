@@ -19,6 +19,6 @@ public class GatwayApplication  implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		gatewayService.loadAllApiKeys();
+		gatewayService.loadConfigurations();
 	}
 }

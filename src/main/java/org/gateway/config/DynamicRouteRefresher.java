@@ -31,7 +31,7 @@ public class DynamicRouteRefresher {
     	if(commonUtil.isNotNullOrEmpty(globalProperties.getApiClients())) {
         	globalProperties.getApiClients().clear();
         }
-        gatewayService.loadAllApiKeys();
+        gatewayService.loadConfigurations();
         dynamicRouteUtil.dynamicRouteDefinition();
     }
 }
